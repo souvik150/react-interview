@@ -18,7 +18,6 @@ function App() {
         text={data.text}
         replies={data.replies}
       />
-        <div className="vl"></div>
     </div>
   );
 }

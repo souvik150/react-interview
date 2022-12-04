@@ -22,8 +22,10 @@ function Chat({ name, avatar, text, replies }) {
 
         <p className="text-2xl">{name}</p>
       </div>
-      {visibility && <p className="pl-10">{text}</p>}
-      <div className="ml-10">
+      {visibility &&
+      <div>
+          <p className="pl-10">{text}</p>
+          <div className="ml-10">
         {/*Recusively calls the chat component*/}
 
         {replies &&
@@ -40,7 +42,9 @@ function Chat({ name, avatar, text, replies }) {
                </>
             );
           })}
-      </div>
+            </div>
+          </div>
+      }
     </div>
   );
 }
